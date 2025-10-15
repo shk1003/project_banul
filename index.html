@@ -4,8 +4,230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>바늘이야기</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        main .new #new_item {width: 1200px;}
+    </style>
 </head>
 <body>
+    <header>
+        <div class="main_header"><!-- 최상단 헤더 -->
+            <div class="logo">
+                <a href="#"><img src="./images/imgi_3_logo.png" alt="바늘이야기 로고"></a>
+            </div>
+            <div class="top_menu"><!-- 우측 로그인메뉴  -->
+                <div class="login">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">마이페이지</a>
+                    <a href="#">장바구니</a>
+                    <a href="#" class="lang">언어설정</a>
+                </div>
+                <div class="search_btn">
+                    <input type="text" name="search" id="search" placeholder="검색어를 입력해주세요">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.7 13.75L7.975 9.025C7.6 9.325 7.16875 9.5625 6.68125 9.7375C6.19375 9.9125 5.675 10 5.125 10C3.7625 10 2.60938 9.52812 1.66563 8.58438C0.721875 7.64062 0.25 6.4875 0.25 5.125C0.25 3.7625 0.721875 2.60938 1.66563 1.66563C2.60938 0.721875 3.7625 0.25 5.125 0.25C6.4875 0.25 7.64062 0.721875 8.58438 1.66563C9.52812 2.60938 10 3.7625 10 5.125C10 5.675 9.9125 6.19375 9.7375 6.68125C9.5625 7.16875 9.325 7.6 9.025 7.975L13.75 12.7L12.7 13.75ZM5.125 8.5C6.0625 8.5 6.85938 8.17188 7.51562 7.51562C8.17188 6.85938 8.5 6.0625 8.5 5.125C8.5 4.1875 8.17188 3.39062 7.51562 2.73438C6.85938 2.07812 6.0625 1.75 5.125 1.75C4.1875 1.75 3.39062 2.07812 2.73438 2.73438C2.07812 3.39062 1.75 4.1875 1.75 5.125C1.75 6.0625 2.07812 6.85938 2.73438 7.51562C3.39062 8.17188 4.1875 8.5 5.125 8.5Z" fill="#6B6A6A"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <nav id="gnb"><!-- 상단메뉴 -->
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">BEST</a></li>
+                <li><a href="#">NEW</a></li>
+                <li><a href="#">뜨개실</a></li>
+                <li><a href="#">패키지</a></li>
+                <li><a href="#">바늘/도구</a></li>
+                <li><a href="#">부자재</a></li>
+                <li><a href="#">도서/도안</a></li>
+            </ul>
+        </nav>
+        <div class="notice">
+            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 6.66666V5.33332H13.6667V6.66666H11ZM11.8 11.3333L9.66671 9.73332L10.4667 8.66666L12.6 10.2667L11.8 11.3333ZM10.4667 3.33332L9.66671 2.26666L11.8 0.666656L12.6 1.73332L10.4667 3.33332ZM2.33337 10.6667V7.99999H1.66671C1.30004 7.99999 0.986152 7.86943 0.725041 7.60832C0.46393 7.34721 0.333374 7.03332 0.333374 6.66666V5.33332C0.333374 4.96666 0.46393 4.65277 0.725041 4.39166C0.986152 4.13055 1.30004 3.99999 1.66671 3.99999H4.33337L7.66671 1.99999V9.99999L4.33337 7.99999H3.66671V10.6667H2.33337ZM6.33337 7.63332V4.36666L4.70004 5.33332H1.66671V6.66666H4.70004L6.33337 7.63332ZM8.33337 8.23332V3.76666C8.63337 4.03332 8.87504 4.35832 9.05837 4.74166C9.24171 5.12499 9.33337 5.54443 9.33337 5.99999C9.33337 6.45555 9.24171 6.87499 9.05837 7.25832C8.87504 7.64166 8.63337 7.96666 8.33337 8.23332Z" fill="#1C1B1F"/>
+            </svg>
+            <a href="#">NOTICE</a>
+            <a href="#">도안 PDF 디지털 파일로 리뉴얼</a>
+        </div>
+    </header>
+    <main><!-- 메인컨텐츠 -->
+        <div class="swiper" id="main_bnr"><!-- 메인배너 스와이퍼 -->
+            <!--필수-->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/Rectangle 4.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/Rectangle 4 (1).png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/Rectangle 4 (1).png" alt=""></div>
+            </div>
+        </div>
+        <div class="new"><!-- 이번주신상 -->
+            <h1>이번주 신상</h1>
+            <p>지금 막 업데이트된 신상아이템</p>
+            <div class="swiper" id="new_item"><!-- 신상 스와이퍼 -->
+                <!--필수-->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="new_product">
+                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                            <div class="item_text">
+                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                <p class="price">50,000원</p>
+                                <div class="level">
+                                    <p class="level">난이도</p>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                </div>
+                                <p class="review">리뷰 : 30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_product">
+                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                            <div class="item_text">
+                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                <p class="price">50,000원</p>
+                                <div class="level">
+                                    <p class="level">난이도</p>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                </div>
+                                <p class="review">리뷰 : 30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_product">
+                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                            <div class="item_text">
+                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                <p class="price">50,000원</p>
+                                <div class="level">
+                                    <p class="level">난이도</p>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                </div>
+                                <p class="review">리뷰 : 30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_product">
+                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                            <div class="item_text">
+                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                <p class="price">50,000원</p>
+                                <div class="level">
+                                    <p class="level">난이도</p>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                    </svg>
+                                </div>
+                                <p class="review">리뷰 : 30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-slide">slide2</div>
+                    <div class="swiper-slide">slide3</div> -->
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="best"><!-- 베스트상품 -->
+            <h1>베스트 상품</h1>
+            <p>지금 가장 사랑받는 아이템이에요</p>
+            <div class="best_tab">
+                <a href="#" class="diy_tab tab">DIY 패키지</a>
+                <a href="#" class="tab">부자재</a>
+                <a href="#" class="tab">바늘실</a>
+            </div>
+            <div class="swiper" id="best_item"><!-- 베스트 스와이퍼 -->
+                <!--필수-->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">slide1</div>
+                    <div class="swiper-slide">slide2</div>
+                    <div class="swiper-slide">slide3</div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </main>
+
     
+    <script>
+        const mainBnr = new Swiper('#main_bnr',{
+            autoplay:{delay:200000},
+            loop:true,
+        })
+        const newItem = new Swiper('#new_item',{
+            autoplay:{delay:200000},
+            loop:true,
+            // 한 화면 기준 보이는 슬라이드 개수 옵션
+            slidesPerView:4,
+            //슬라이드 사이 여백(slidesPerView:2개 이상인 경우)
+            spaceBetween:40,/* px 내장 */
+            // 슬라이드 왼쪽상단 기준을 가운데로 옮기기
+            centeredSlides:true,
+        })
+    </script>
 </body>
 </html>
