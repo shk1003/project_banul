@@ -1,3 +1,6 @@
+#wrap {
+    
+}
 main .new #new_item {
     width: 1440px; margin: 0 auto; padding: 50px 20px; }
 
@@ -11,15 +14,27 @@ body {max-width: 1920px; margin:20px 0 ;}
     font-size: 0.625rem; border: 1px solid #6B6A6A; padding: 4px 15px;
     text-align: center; border-radius: 5px;
 }
-.main_header .search_btn #search {width: 484px; height: 34px; background-color: #f1f1f1; border-radius: 20px; padding: 0 20px; font-size:0.875rem ;}
+.main_header .search_btn #search {
+    width: 484px; height: 34px; background-color: #f1f1f1; border-radius: 20px; 
+    padding: 0 40px 0 20px; font-size:0.875rem ;
+}
 .main_header .search_btn .search_btn {position: absolute; position: absolute; transform: translateX(-30px) translateY(10px); }
 
 .menu {display: flex; flex-flow: row nowrap; justify-content: space-between; padding: 0 240px; align-items: center; }
 #gnb {padding: 20px 0;}
-#gnb ul {display: flex; flex-flow: row nowrap;  }
+#gnb ul {display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;}
 #gnb ul a {color: #343434; padding:0 25px ;}
 #gnb ul li {position: relative;}
-#gnb ul a::after {content: ''; display: inline-block; width: 1px ; height: 10px ; background-color: #dddddd; top: 50%; transform: translateX(15px);}
+#gnb ul a::after 
+{content: ''; display: inline-block; width: 1px ; height: 10px ; background-color: #dddddd; 
+    top: 50%; transform: translateX(19px);
+}
+#gnb ul li:first-child a { /* 메뉴왼쪽 여백제거 */
+    padding-left: 0; 
+}
+#gnb ul li:last-child a::after { /* 마지막 메뉴 막대기 제거 */
+    display: none;
+}
 .menu .notice {font-size:0.688rem ;}
 .menu .notice .notice_color {color: #6B6A6A;}
 .new h1 {font-size: 2rem; font-weight: 600; text-align: center; color: #343434; padding-top: 100px; padding-bottom: 13px;}
@@ -49,3 +64,35 @@ body {max-width: 1920px; margin:20px 0 ;}
     border-radius: 20px; font-size: 0.938rem; color: #343434;
 }
 .best .best_tab .diy_tab {color: #fff; background: #ED9671;}
+
+#best_item .swiper-scrollbar {color: red;}
+.new_product {display: block;}
+
+.add_bnr a {display: block; text-align: center; margin: 120px 0;}
+.video_section {width: 1920px; height:1093px ; background-color: #F6F4F4;}
+.video_section .video_item:first-child {display: flex; flex-flow: row nowrap;justify-content: center; padding: 82px 0 44px ;}
+.video_section .video_item{display: flex; flex-flow: row nowrap;justify-content: center; }
+.video_section .video_item iframe {width: 794px; height: 439px;}
+.video_section .video_item .text {display: flex; flex-flow: column nowrap; margin: 20px 50px;}
+.video_section .video_item .text .video_txt {color: #A4A4A4;}
+.video_section .video_item .text .heart_txt {color: #343434; font-size: 2.5rem; font-weight: 700; padding: 12px 0 45px ;}
+.video_section .video_item .text .heart_txt2 {color: #6B6A6A; font-weight: 500; line-height: 180%;}
+
+.customer_review {border-bottom: 1px solid #D9D9D9; width: 1440px; text-align: center; margin: 0 auto;}
+.customer_review .review_txt {display: flex; flex-flow: row nowrap; justify-content: space-between; width: 1360px; margin: 0 auto; padding-bottom: 20px;}
+.customer_review .more {display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;}
+.customer_review h2 {font-size: 2rem; font-weight: 600; text-align: center; color: #343434; padding: 122px 0 16px;}
+.customer_review > p {font-size: 0.875rem; text-align: center; color: #6B6A6A; padding-bottom: 30px;}
+.customer_review .asterion {display: flex; flex-flow: row nowrap;}
+.customer_review .asterion .review_text {font-size: 0.938rem ; color: #A4A4A4;}
+.customer_review .asterion .first {font-size: 0.938rem ; color: black;}
+.customer_review .asterion .star {padding: 0 30px;}
+.customer_review .more .more_small {font-size: 0.75rem ; color: #D9D9D9; padding-right: 8px;}
+
+.review_item {display: flex; flex-flow: row nowrap; width: 1360px; margin: 0 auto; padding-top: 30px; justify-content: space-between;}
+.review_item .txt {display: flex; flex-flow:column nowrap;}
+.review_item .item .txt .title_view {font-size: 0.875rem; padding: 10px 0;}
+.review_item .item .txt .view_txt, .year, .person {font-size: 0.75rem;}
+.review_item .item .txt .view_txt{padding-bottom: 18px;}
+.review_item .item .txt .year {padding: 2px 0;}
+

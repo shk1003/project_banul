@@ -14,459 +14,630 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <header>
-        <div class="main_header"><!-- 최상단 헤더 -->
-            <div class="logo">
-                <a href="#"><img src="./images/imgi_3_logo.png" alt="바늘이야기 로고"></a>
-            </div>
-            <div class="top_menu"><!-- 우측 로그인메뉴  -->
-                <div class="login">
-                    <a href="#">로그인</a>
-                    <a href="#">회원가입</a>
-                    <a href="#">마이페이지</a>
-                    <a href="#">장바구니</a>
-                    <a href="#" class="lang">언어설정</a>
+    <div id="wrap">
+        <header>
+            <div class="main_header"><!-- 최상단 헤더 -->
+                <div class="logo">
+                    <a href="#"><img src="./images/imgi_3_logo.png" alt="바늘이야기 로고"></a>
                 </div>
-                <div class="search_btn"><!-- 검색창 -->
-                    <input type="text" name="search" id="search" placeholder="검색어를 입력해주세요">
-                    <a href="#"><svg class="search_btn" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.7 13.75L7.975 9.025C7.6 9.325 7.16875 9.5625 6.68125 9.7375C6.19375 9.9125 5.675 10 5.125 10C3.7625 10 2.60938 9.52812 1.66563 8.58438C0.721875 7.64062 0.25 6.4875 0.25 5.125C0.25 3.7625 0.721875 2.60938 1.66563 1.66563C2.60938 0.721875 3.7625 0.25 5.125 0.25C6.4875 0.25 7.64062 0.721875 8.58438 1.66563C9.52812 2.60938 10 3.7625 10 5.125C10 5.675 9.9125 6.19375 9.7375 6.68125C9.5625 7.16875 9.325 7.6 9.025 7.975L13.75 12.7L12.7 13.75ZM5.125 8.5C6.0625 8.5 6.85938 8.17188 7.51562 7.51562C8.17188 6.85938 8.5 6.0625 8.5 5.125C8.5 4.1875 8.17188 3.39062 7.51562 2.73438C6.85938 2.07812 6.0625 1.75 5.125 1.75C4.1875 1.75 3.39062 2.07812 2.73438 2.73438C2.07812 3.39062 1.75 4.1875 1.75 5.125C1.75 6.0625 2.07812 6.85938 2.73438 7.51562C3.39062 8.17188 4.1875 8.5 5.125 8.5Z" fill="#6B6A6A"/>
-                        </svg></a>
+                <div class="top_menu"><!-- 우측 로그인메뉴  -->
+                    <div class="login">
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                        <a href="#">마이페이지</a>
+                        <a href="#">장바구니</a>
+                        <a href="#" class="lang">언어설정</a>
+                    </div>
+                    <div class="search_btn"><!-- 검색창 -->
+                        <input type="text" name="search" id="search" placeholder="검색어를 입력해주세요">
+                        <a href="#"><svg class="search_btn" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.7 13.75L7.975 9.025C7.6 9.325 7.16875 9.5625 6.68125 9.7375C6.19375 9.9125 5.675 10 5.125 10C3.7625 10 2.60938 9.52812 1.66563 8.58438C0.721875 7.64062 0.25 6.4875 0.25 5.125C0.25 3.7625 0.721875 2.60938 1.66563 1.66563C2.60938 0.721875 3.7625 0.25 5.125 0.25C6.4875 0.25 7.64062 0.721875 8.58438 1.66563C9.52812 2.60938 10 3.7625 10 5.125C10 5.675 9.9125 6.19375 9.7375 6.68125C9.5625 7.16875 9.325 7.6 9.025 7.975L13.75 12.7L12.7 13.75ZM5.125 8.5C6.0625 8.5 6.85938 8.17188 7.51562 7.51562C8.17188 6.85938 8.5 6.0625 8.5 5.125C8.5 4.1875 8.17188 3.39062 7.51562 2.73438C6.85938 2.07812 6.0625 1.75 5.125 1.75C4.1875 1.75 3.39062 2.07812 2.73438 2.73438C2.07812 3.39062 1.75 4.1875 1.75 5.125C1.75 6.0625 2.07812 6.85938 2.73438 7.51562C3.39062 8.17188 4.1875 8.5 5.125 8.5Z" fill="#6B6A6A"/>
+                            </svg></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="menu">
-            <nav id="gnb"><!-- 상단메뉴 -->
-                <ul>
-                    <li><a href="#"><img src="./images/dehaze (1).png"></a></li>
-                    <li><a href="#">BEST</a></li>
-                    <li><a href="#">NEW</a></li>
-                    <li><a href="#">뜨개실</a></li>
-                    <li><a href="#">패키지</a></li>
-                    <li><a href="#">바늘/도구</a></li>
-                    <li><a href="#">부자재</a></li>
-                    <li><a href="#">도서/도안</a></li>
-                </ul>
-            </nav>
-            <div class="notice">
-                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 6.66666V5.33332H13.6667V6.66666H11ZM11.8 11.3333L9.66671 9.73332L10.4667 8.66666L12.6 10.2667L11.8 11.3333ZM10.4667 3.33332L9.66671 2.26666L11.8 0.666656L12.6 1.73332L10.4667 3.33332ZM2.33337 10.6667V7.99999H1.66671C1.30004 7.99999 0.986152 7.86943 0.725041 7.60832C0.46393 7.34721 0.333374 7.03332 0.333374 6.66666V5.33332C0.333374 4.96666 0.46393 4.65277 0.725041 4.39166C0.986152 4.13055 1.30004 3.99999 1.66671 3.99999H4.33337L7.66671 1.99999V9.99999L4.33337 7.99999H3.66671V10.6667H2.33337ZM6.33337 7.63332V4.36666L4.70004 5.33332H1.66671V6.66666H4.70004L6.33337 7.63332ZM8.33337 8.23332V3.76666C8.63337 4.03332 8.87504 4.35832 9.05837 4.74166C9.24171 5.12499 9.33337 5.54443 9.33337 5.99999C9.33337 6.45555 9.24171 6.87499 9.05837 7.25832C8.87504 7.64166 8.63337 7.96666 8.33337 8.23332Z" fill="#1C1B1F"/>
-                </svg>
-                <a href="#">NOTICE</a>
-                <a class="notice_color" href="#">도안 PDF 디지털 파일로 리뉴얼</a>
+            <div class="menu">
+                <nav id="gnb"><!-- 상단메뉴 -->
+                    <ul>
+                        <li><a href="#"><img src="./images/dehaze (1).png"></a></li>
+                        <li><a href="#">BEST</a></li>
+                        <li><a href="#">NEW</a></li>
+                        <li><a href="#">뜨개실</a></li>
+                        <li><a href="#">패키지</a></li>
+                        <li><a href="#">바늘/도구</a></li>
+                        <li><a href="#">부자재</a></li>
+                        <li><a href="#">도서/도안</a></li>
+                    </ul>
+                </nav>
+                <div class="notice">
+                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 6.66666V5.33332H13.6667V6.66666H11ZM11.8 11.3333L9.66671 9.73332L10.4667 8.66666L12.6 10.2667L11.8 11.3333ZM10.4667 3.33332L9.66671 2.26666L11.8 0.666656L12.6 1.73332L10.4667 3.33332ZM2.33337 10.6667V7.99999H1.66671C1.30004 7.99999 0.986152 7.86943 0.725041 7.60832C0.46393 7.34721 0.333374 7.03332 0.333374 6.66666V5.33332C0.333374 4.96666 0.46393 4.65277 0.725041 4.39166C0.986152 4.13055 1.30004 3.99999 1.66671 3.99999H4.33337L7.66671 1.99999V9.99999L4.33337 7.99999H3.66671V10.6667H2.33337ZM6.33337 7.63332V4.36666L4.70004 5.33332H1.66671V6.66666H4.70004L6.33337 7.63332ZM8.33337 8.23332V3.76666C8.63337 4.03332 8.87504 4.35832 9.05837 4.74166C9.24171 5.12499 9.33337 5.54443 9.33337 5.99999C9.33337 6.45555 9.24171 6.87499 9.05837 7.25832C8.87504 7.64166 8.63337 7.96666 8.33337 8.23332Z" fill="#1C1B1F"/>
+                    </svg>
+                    <a href="#">NOTICE</a>
+                    <a class="notice_color" href="#">도안 PDF 디지털 파일로 리뉴얼</a>
+                </div>
             </div>
-        </div>
-    </header>
-    <main><!-- 메인컨텐츠 -->
-        <div class="swiper" id="main_bnr"><!-- 메인배너 스와이퍼 -->
-            <!--필수-->
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./images/Rectangle 4.png" alt=""></div>
-                <div class="swiper-slide"><img src="./images/Rectangle 4 (1).png" alt=""></div>
-                <div class="swiper-slide"><img src="./images/Rectangle 4 (1).png" alt=""></div>
-            </div>
-        </div>
-        <div class="new"><!-- 이번주신상 -->
-            <h1>이번주 신상</h1>
-            <p>지금 막 업데이트된 신상아이템</p>
-            <div class="swiper" id="new_item"><!-- 신상 스와이퍼 -->
+        </header>
+        <main><!-- 메인컨텐츠 -->
+            <div class="swiper" id="main_bnr"><!-- 메인배너 스와이퍼 -->
                 <!--필수-->
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="new_product">
-                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
-                            <div class="item_text">
-                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
-                                <p class="price">50,000원</p>
-                                <div class="level">
-                                    <p class="level_txt">난이도</p>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                </div>
-                                <p class="review">리뷰 : 30</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="new_product">
-                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
-                            <div class="item_text">
-                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
-                                <p class="price">50,000원</p>
-                                <div class="level">
-                                    <p class="level_txt">난이도</p>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                </div>
-                                <p class="review">리뷰 : 30</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="new_product">
-                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
-                            <div class="item_text">
-                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
-                                <p class="price">50,000원</p>
-                                <div class="level">
-                                    <p class="level_txt">난이도</p>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                </div>
-                                <p class="review">리뷰 : 30</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="new_product">
-                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
-                            <div class="item_text">
-                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
-                                <p class="price">50,000원</p>
-                                <div class="level">
-                                    <p class="level_txt">난이도</p>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                </div>
-                                <p class="review">리뷰 : 30</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="new_product">
-                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
-                            <div class="item_text">
-                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
-                                <p class="price">50,000원</p>
-                                <div class="level">
-                                    <p class="level_txt">난이도</p>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                </div>
-                                <p class="review">리뷰 : 30</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- <div class="swiper-slide">slide2</div>
-                    <div class="swiper-slide">slide3</div> -->
+                    <div class="swiper-slide"><a href="#"><img src="./images/Rectangle 4.png" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./images/Frame 191.png" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./images/Untitled-1.jpg" alt=""></a></div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
-        </div>
-        <div class="best"><!-- 베스트상품 -->
-            <h1>베스트 상품</h1>
-            <p>지금 가장 사랑받는 아이템이에요</p>
-            <div class="best_tab">
-                <a href="#" class="diy_tab tab">DIY 패키지</a>
-                <a href="#" class="tab">부자재</a>
-                <a href="#" class="tab">바늘실</a>
+            <div class="new"><!-- 이번주신상 -->
+                <h1>이번주 신상</h1>
+                <p>지금 막 업데이트된 신상아이템</p>
+                <div class="swiper" id="new_item"><!-- 신상 스와이퍼 -->
+                    <!--필수-->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="new_product">
+                                <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                                <div class="item_text">
+                                    <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                    <p class="price">50,000원</p>
+                                    <div class="level">
+                                        <p class="level_txt">난이도</p>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                    </div>
+                                    <p class="review">리뷰 : 30</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="new_product">
+                                <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                                <div class="item_text">
+                                    <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                    <p class="price">50,000원</p>
+                                    <div class="level">
+                                        <p class="level_txt">난이도</p>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                    </div>
+                                    <p class="review">리뷰 : 30</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="new_product">
+                                <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                                <div class="item_text">
+                                    <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                    <p class="price">50,000원</p>
+                                    <div class="level">
+                                        <p class="level_txt">난이도</p>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                    </div>
+                                    <p class="review">리뷰 : 30</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="new_product">
+                                <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                                <div class="item_text">
+                                    <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                    <p class="price">50,000원</p>
+                                    <div class="level">
+                                        <p class="level_txt">난이도</p>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                    </div>
+                                    <p class="review">리뷰 : 30</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="new_product">
+                                <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                                <div class="item_text">
+                                    <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                    <p class="price">50,000원</p>
+                                    <div class="level">
+                                        <p class="level_txt">난이도</p>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                    </div>
+                                    <p class="review">리뷰 : 30</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
-            <div class="swiper" id="best_item"><!-- 베스트 스와이퍼 -->
-                <!--필수-->
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="new_product">
-                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
-                            <div class="item_text">
-                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
-                                <p class="price">50,000원</p>
-                                <div class="level">
-                                    <p class="level_txt">난이도</p>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
+            <div class="best"><!-- 베스트상품 -->
+                <h1>베스트 상품</h1>
+                <p>지금 가장 사랑받는 아이템이에요</p>
+                <div class="best_tab">
+                    <a href="#" class="diy_tab tab">DIY 패키지</a>
+                    <a href="#" class="tab">부자재</a>
+                    <a href="#" class="tab">바늘실</a>
+                </div>
+                <div class="swiper" id="best_item"><!-- 베스트 스와이퍼 -->
+                    <!--필수-->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="new_product">
+                                <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                                <div class="item_text">
+                                    <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                    <p class="price">50,000원</p>
+                                    <div class="level">
+                                        <p class="level_txt">난이도</p>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                    </div>
+                                    <p class="review">리뷰 : 30</p>
                                 </div>
-                                <p class="review">리뷰 : 30</p>
-                            </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="new_product">
+                                <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                                <div class="item_text">
+                                    <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                    <p class="price">50,000원</p>
+                                    <div class="level">
+                                        <p class="level_txt">난이도</p>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                    </div>
+                                    <p class="review">리뷰 : 30</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="new_product">
+                                <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                                <div class="item_text">
+                                    <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                    <p class="price">50,000원</p>
+                                    <div class="level">
+                                        <p class="level_txt">난이도</p>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                    </div>
+                                    <p class="review">리뷰 : 30</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="new_product">
+                                <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                                <div class="item_text">
+                                    <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                    <p class="price">50,000원</p>
+                                    <div class="level">
+                                        <p class="level_txt">난이도</p>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                    </div>
+                                    <p class="review">리뷰 : 30</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="new_product">
+                                <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                                <div class="item_text">
+                                    <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                    <p class="price">50,000원</p>
+                                    <div class="level">
+                                        <p class="level_txt">난이도</p>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                    </div>
+                                    <p class="review">리뷰 : 30</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="new_product">
+                                <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                                <div class="item_text">
+                                    <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                    <p class="price">50,000원</p>
+                                    <div class="level">
+                                        <p class="level_txt">난이도</p>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                    </div>
+                                    <p class="review">리뷰 : 30</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="new_product">
+                                <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                                <div class="item_text">
+                                    <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                    <p class="price">50,000원</p>
+                                    <div class="level">
+                                        <p class="level_txt">난이도</p>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                    </div>
+                                    <p class="review">리뷰 : 30</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="new_product">
+                                <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
+                                <div class="item_text">
+                                    <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
+                                    <p class="price">50,000원</p>
+                                    <div class="level">
+                                        <p class="level_txt">난이도</p>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
+                                        </svg>
+                                    </div>
+                                    <p class="review">리뷰 : 30</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="new_product">
-                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
-                            <div class="item_text">
-                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
-                                <p class="price">50,000원</p>
-                                <div class="level">
-                                    <p class="level_txt">난이도</p>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                </div>
-                                <p class="review">리뷰 : 30</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="new_product">
-                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
-                            <div class="item_text">
-                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
-                                <p class="price">50,000원</p>
-                                <div class="level">
-                                    <p class="level_txt">난이도</p>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                </div>
-                                <p class="review">리뷰 : 30</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="new_product">
-                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
-                            <div class="item_text">
-                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
-                                <p class="price">50,000원</p>
-                                <div class="level">
-                                    <p class="level_txt">난이도</p>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                </div>
-                                <p class="review">리뷰 : 30</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="new_product">
-                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
-                            <div class="item_text">
-                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
-                                <p class="price">50,000원</p>
-                                <div class="level">
-                                    <p class="level_txt">난이도</p>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                </div>
-                                <p class="review">리뷰 : 30</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="new_product">
-                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
-                            <div class="item_text">
-                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
-                                <p class="price">50,000원</p>
-                                <div class="level">
-                                    <p class="level_txt">난이도</p>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                </div>
-                                <p class="review">리뷰 : 30</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="new_product">
-                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
-                            <div class="item_text">
-                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
-                                <p class="price">50,000원</p>
-                                <div class="level">
-                                    <p class="level_txt">난이도</p>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                </div>
-                                <p class="review">리뷰 : 30</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="new_product">
-                            <div class="thumbnail"><img src="./images/Rectangle 7.png" alt=""></div>
-                            <div class="item_text">
-                                <p class="item_name">[DIY] 큐프로 라피아 빅백(동영상)</p>
-                                <p class="price">50,000원</p>
-                                <div class="level">
-                                    <p class="level_txt">난이도</p>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="12" height="12" fill="#D9D9D9"/>
-                                    </svg>
-                                </div>
-                                <p class="review">리뷰 : 30</p>
-                            </div>
-                        </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+            <div class="add_bnr">
+                <a href="#"><img src="./images/Frame 43.png" alt=""></a>
+            </div>
+            <div class="video_section">
+                <div class="video_item">
+                    <iframe src="https://www.youtube.com/embed/I8OQreWKgIE"></iframe>
+                    <div class="text">
+                        <span class="video_txt">작은 실 한 타래로 마음을 담은 하트를 완성해보세요 </span>
+                        <span class="heart_txt">자투리실로 뜨는 하트키링</span>
+                        <span class="heart_txt2">자투리 실로 30분 만에 완성하는 하트 키링 튜토리얼<br>
+                            어려운 도안 없이, 짧은 시간에 완성할 수 있어요</span>
                     </div>
                 </div>
-                <div class="swiper-scrollbar"></div>
+                <div class="video_item">
+                    <iframe src="https://www.youtube.com/embed/BCK3iKaUQ-I"></iframe>
+                    <div class="text">
+                        <span class="video_txt">코바늘, 대바늘 모두 출시되었어요 </span>
+                        <span class="heart_txt">고양이귀 비니 완전 정복</span>
+                        <span class="heart_txt2">자투리 실로 30분 만에 완성하는 하트 키링 튜토리얼<br>
+                            어려운 도안 없이, 짧은 시간에 완성할 수 있어요</span>
+                    </div>
+                </div>
             </div>
-        </div>
-    </main>
-    <footer><!-- 푸터 -->
-        <div class="footer_notice">
-            <div class="notice_content">
-                <h1 class="notice_text">공지사항</h1>
-                <a href="#"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.4448 13.5L0.5 7L6.4448 0.5L7.5 1.65375L2.6104 7L7.5 12.3463L6.4448 13.5Z" fill="#6B6A6A"/></svg></a>
+            <div class="customer_review">
+                <h2>구매후기</h2>
+                <p>고객님들의 소중한 완성작을 소개합니다.</p>
+                <div class="review_txt">
+                    <div class="asterion">
+                        <p class="review_text first">최신순</p>
+                        <p class="review_text star">별점순</p>
+                        <p class="review_text best_review">추천순</p>
+                    </div>
+                    <div class="more">
+                        <p class="more_small">더보기</p>
+                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.26786 4L0 0.933333L1 0L5.28571 4L1 8L0 7.06667L3.26786 4ZM7.98214 4L4.71429 0.933333L5.71429 0L10 4L5.71429 8L4.71429 7.06667L7.98214 4Z" fill="#A4A4A4"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+            <div class="review_item">
+                <a href="#" class="item">
+                    <div class="thumbnail_small"><img src="./images/Rectangle 44.png" alt=""></div>
+                    <div class="txt">
+                        <span class="title_view">[DIY] 코튼10 흘깃 하트 키링(동영상)</span>
+                        <span class="view_txt">1년 전부터 고민만 하다가 추석세일 기념으로 샀어요♡....</span>
+                        <div class="star_view">
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                        </div>
+                        <span class="year">2025.09.13</span>
+                        <span class="person">sa*********</span>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <div class="thumbnail_small"><img src="./images/Rectangle 44.png" alt=""></div>
+                    <div class="txt">
+                        <span class="title_view">[DIY] 코튼10 흘깃 하트 키링(동영상)</span>
+                        <span class="view_txt">1년 전부터 고민만 하다가 추석세일 기념으로 샀어요♡....</span>
+                        <div class="star_view">
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                        </div>
+                        <span class="year">2025.09.13</span>
+                        <span class="person">sa*********</span>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <div class="thumbnail_small"><img src="./images/Rectangle 44.png" alt=""></div>
+                    <div class="txt">
+                        <span class="title_view">[DIY] 코튼10 흘깃 하트 키링(동영상)</span>
+                        <span class="view_txt">1년 전부터 고민만 하다가 추석세일 기념으로 샀어요♡....</span>
+                        <div class="star_view">
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                        </div>
+                        <span class="year">2025.09.13</span>
+                        <span class="person">sa*********</span>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <div class="thumbnail_small"><img src="./images/Rectangle 44.png" alt=""></div>
+                    <div class="txt">
+                        <span class="title_view">[DIY] 코튼10 흘깃 하트 키링(동영상)</span>
+                        <span class="view_txt">1년 전부터 고민만 하다가 추석세일 기념으로 샀어요♡....</span>
+                        <div class="star_view">
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                        </div>
+                        <span class="year">2025.09.13</span>
+                        <span class="person">sa*********</span>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <div class="thumbnail_small"><img src="./images/Rectangle 44.png" alt=""></div>
+                    <div class="txt">
+                        <span class="title_view">[DIY] 코튼10 흘깃 하트 키링(동영상)</span>
+                        <span class="view_txt">1년 전부터 고민만 하다가 추석세일 기념으로 샀어요♡....</span>
+                        <div class="star_view">
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.3387 11.12C2.56584 11.7083 1.49266 10.9605 1.77679 10.0318L2.40218 7.9875C2.52784 7.57674 2.37714 7.13161 2.02779 6.88167L0.53448 5.81329C-0.256397 5.24746 0.143898 4 1.11634 4H2.95597C3.39758 4 3.7869 3.71033 3.9138 3.28735L4.54217 1.19275C4.82724 0.242549 6.17277 0.242552 6.45783 1.19275L7.0862 3.28735C7.2131 3.71033 7.60242 4 8.04403 4H9.88366C10.8561 4 11.2564 5.24746 10.4655 5.81329L8.97221 6.88167C8.62286 7.13161 8.47216 7.57674 8.59782 7.9875L9.22321 10.0318C9.50734 10.9605 8.43416 11.7083 7.6613 11.12L6.10566 9.93598C5.74782 9.66362 5.25218 9.66362 4.89435 9.93598L3.3387 11.12Z" fill="#ED9671"/>
+                            </svg>
+                        </div>
+                        <span class="year">2025.09.13</span>
+                        <span class="person">sa*********</span>
+                    </div>
+                </a>
+            </div>
+        </main>
+        <footer><!-- 푸터 -->
+            <div class="footer_notice">
+                <div class="notice_content">
+                    <h1 class="notice_text"></h1>
+                    <a href="#"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.4448 13.5L0.5 7L6.4448 0.5L7.5 1.65375L2.6104 7L7.5 12.3463L6.4448 13.5Z" fill="#6B6A6A"/></svg></a>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     
     <script>
