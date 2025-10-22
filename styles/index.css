@@ -1,5 +1,7 @@
 #wrap {
-    
+    width: 100%;
+    min-width: 1400px;
+    margin: 0 auto
 }
 main .new #new_item {
     width: 1440px; margin: 0 auto; padding: 50px 20px; }
@@ -65,11 +67,35 @@ body {max-width: 1920px; margin:20px 0 ;}
 }
 .best .best_tab .diy_tab {color: #fff; background: #ED9671;}
 
-#best_item .swiper-scrollbar {color: red;}
+
+
+#best_item .swiper-scrollbar {
+    width: 890px;
+    /* bottom: -20px; */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px !important; /* 아래로 약간 띄워줌 */
+    z-index: 10;
+    position: absolute;
+}
+
+#best_item .swiper {
+    position: relative;
+    overflow: visible; /* hidden → visible */
+    padding-bottom: 40px;
+}
+
+.swiper-container {
+    overflow: visible;
+}
+
+
+
 .new_product {display: block;}
 
 .add_bnr a {display: block; text-align: center; margin: 120px 0;}
-.video_section {width: 1920px; height:1093px ; background-color: #F6F4F4;}
+
+.video_section {width: 100%; height:1093px ; background-color: #F6F4F4;}
 .video_section .video_item:first-child {display: flex; flex-flow: row nowrap;justify-content: center; padding: 82px 0 44px ;}
 .video_section .video_item{display: flex; flex-flow: row nowrap;justify-content: center; }
 .video_section .video_item iframe {width: 794px; height: 439px;}
@@ -96,3 +122,33 @@ body {max-width: 1920px; margin:20px 0 ;}
 .review_item .item .txt .view_txt{padding-bottom: 18px;}
 .review_item .item .txt .year {padding: 2px 0;}
 
+footer {margin-top: 90px;}
+footer .best_notice {font-size: 0.813rem; padding-left: 105px ;}
+.footer_notice {margin: 0 240px; display: flex; justify-content: space-between;}
+.notice_content {display: flex; flex-flow: row nowrap; justify-content: center; align-items: center; padding-bottom: 23px;}
+.notice_content h1 {padding-right: 20px; font-size:1.375rem ; font-weight: 500;}
+.notice_content a {padding: 0 10px;}
+.footer_year {display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;}
+.footer_year .arrow {padding-left: 10px;}
+.footer_year p {padding-left: 73px;}
+.footer_year .f_year {font-size: 0.813rem;}
+.footer_year .f_more {font-size: 0.75rem;}
+
+.footer_txt {width: 100%; height: 315px; background: #EBD9C5 ;}
+.f_logo {padding-right:28px ;}
+.footer_txt .f_bg {display: flex; flex-flow: row nowrap; padding: 40px 0 0 240px; }
+.footer_txt nav {padding-bottom:20px ; }
+.footer_txt >p {font-size: 0.813rem;}
+.f_txt li {font-size: 0.813rem; padding-right: 40px;}
+.f_txt li:last-child {padding-right: 0;}
+.f_txt ul {display: flex; flex-flow: row nowrap;}
+address {font-size: 0.813rem; color: #343434; line-height:180% ; padding-bottom: 27px;}
+.f_number {padding-left: 253px;}
+.f_number > h2 {font-size: 0.938rem; padding-bottom:16px ;}
+.f_number > h3 {font-size: 1.25rem; font-weight: 500; padding-bottom:8px; }
+.f_number > p {font-size: 0.813rem; color: #343434; padding-bottom: 7px;}
+.f_number > p {line-height: 120%;}
+.f_bank {padding-left: 79px;}
+.f_bank > h2 {font-size: 0.938rem; padding-bottom: 14px;}
+.f_bank > p {font-size: 0.813rem; line-height: 180%; color: #343434;}
+.f_bank .icon {display: flex; flex-flow: row nowrap; align-items: center; gap:12px ;}
