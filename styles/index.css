@@ -67,16 +67,9 @@ body {max-width: 1920px; margin:20px 0 ;}
 }
 .best .best_tab .diy_tab {color: #fff; background: #ED9671;}
 
-
-
-#best_item .swiper-scrollbar {
-    width: 890px;
-    /* bottom: -20px; */
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -20px !important; /* 아래로 약간 띄워줌 */
-    z-index: 10;
-    position: absolute;
+#best_item {
+    padding-bottom: 62px; 
+    margin-bottom: 127px;
 }
 
 #best_item .swiper {
