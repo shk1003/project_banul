@@ -1,6 +1,6 @@
 #wrap {
     width: 100%;
-    min-width: 1400px;
+    min-width: 1800px;
     margin: 0 auto
 }
 main .new #new_item {
@@ -8,6 +8,7 @@ main .new #new_item {
 
 body {max-width: 1920px; margin:20px 0 ;}
 .top_menu {padding-bottom: 30px;}
+
 .main_header {display: flex; flex-flow: row nowrap; justify-content: space-between; padding: 0 240px;}
 .main_header .logo img {width: 227px;}
 .main_header .login {text-align: right; padding-bottom: 17px ;}
@@ -37,6 +38,15 @@ body {max-width: 1920px; margin:20px 0 ;}
 #gnb ul li:last-child a::after { /* 마지막 메뉴 막대기 제거 */
     display: none;
 }
+
+#gnb ul li:not(:first-child) a:hover { /* 헤더 메뉴에 마우스 올렸을 때 글자색 */
+    font-weight: 500;
+    color: #ED9671 !important; 
+}
+.sub_menu_txt a:hover { /* 서브메뉴에 마우스 올렸을 때 밑줄 */
+    text-decoration: underline;
+}
+
 .menu .notice {font-size:0.688rem ;}
 .menu .notice .notice_color {color: #6B6A6A;}
 .new h1 {font-size: 2rem; font-weight: 600; text-align: center; color: #343434; padding-top: 100px; padding-bottom: 13px;}
@@ -45,6 +55,23 @@ body {max-width: 1920px; margin:20px 0 ;}
     content: ''; position: absolute; width: 170px; height: 1px; 
     background-color: #D9D9D9; bottom: -1px; left: 50%; transform: translateX(-50%);
 }
+
+.sub_menu {
+    width: 100%; height: 417px; background: #fff; position: absolute; z-index: 999; 
+    border-top: 1px solid #D9D9D9; display: none;
+}
+.sub_menu_txt {
+    width: 1067px; margin-left:324px; margin-top: 20px ; 
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+.sub_1 li:first-child {color: #343434; font-weight: 500; padding-bottom: 23px;}
+/* .sub_1 li:nth-child(n+2) {font-size: 0.938rem; color: #6B6A6A; padding-bottom: 13px;} */
+.sub_1 li:not(:first-child) a {font-size: 0.938rem; color: #6B6A6A; display: block; padding-bottom: 13px;}
+
+#main_bnr .swiper-pagination-bullet {background: #ED9671;}
+#new_item .swiper-pagination-bullet {background: #ED9671;}
+#best_item .swiper-scrollbar-horizontal {width: 790px; height: 3px; left: 50% ; transform: translateX(-50%);}
+
 
 .swiper-pagination-bullet-active {background: #ED9671;} /* 확인-------------- */
 
