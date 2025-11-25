@@ -1,6 +1,6 @@
 #wrap {
     width: 100%;
-    min-width: 1800px;
+    /* min-width: 1800px; */
     margin: 0 auto
 }
 main .new #new_item {
@@ -172,3 +172,57 @@ address {font-size: 0.813rem; color: #343434; line-height:180% ; padding-bottom:
 .f_bank > h2 {font-size: 0.938rem; padding-bottom: 14px;}
 .f_bank > p {font-size: 0.813rem; line-height: 180%; color: #343434;}
 .f_bank .icon {display: flex; flex-flow: row nowrap; align-items: center; gap:12px ;}
+
+.swiper-slide img {width: 100%;
+    height: auto;
+    display: block;}
+
+.new_product img {width: 330px;
+    height: auto;
+    display: block;}
+
+#best_item {width: 1900px;}
+.add_bnr img {
+    max-width: 1440px; 
+    height: auto; 
+    width: 100%; 
+}
+/* 반응형 */
+@media screen and (max-width:1400px){
+    .notice {display: none;}
+    .main_header {padding: 0 30px;}
+    .menu {padding: 0 30px;}
+    #new_item .swiper-slide img {
+        max-width: 1400px;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .sub_menu_txt {margin-left:100px;}
+    #new_item .thumbnail > img {width: 320px; height: 362px;}
+    main .new #new_item {width: 1340px;}
+    #best_item {margin: 0 30px; width: 1400px;}
+    #best_item .swiper-slide img {width: 320px; height: 362px;}
+    .add_bnr img {padding:0 40px ;}
+    .heart_txt {font-size:1.875rem !important;}
+    .review_item .thumbnail_small img {width: 250px;}
+    .review_item { width: 1340px;}
+    .footer_notice {margin: 0 35px;}
+    .footer_txt .f_bg {padding: 40px 42px;}
+    .f_txt ul > li {stroke-width: 0.813rem;}
+    .customer_review {width: 1340px;}
+    
+}
+
+@media screen and (max-width: 793px){
+    .main_header .logo img {width: 172px; height: auto;}
+    .login {display: none;}
+    .search_btn {display: none;}
+    #gnb {padding:20px 0 5px;}
+    #gnb li {font-size:0.625rem ; padding: 0 0px;}
+    #gnb ul a {color: #343434; padding:0 15px; }
+    .menu {padding: 0 15px;}
+    #menu_btn img {width:15px ;}
+    #main_bnr .swiper-slide img {width: 100%;}
+    .main_header {padding: 0 10px;}
+}

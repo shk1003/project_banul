@@ -113,6 +113,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><a href="#"><img src="./images/Rectangle 4.png" alt=""></a></div>
                     <div class="swiper-slide"><a href="#"><img src="./images/main_bnr_2.png" alt=""></a></div>
+                    <div class="swiper-slide mobile_bnr"><a href="#"><img src="./images/mo.png" alt=""></a></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -1034,13 +1035,19 @@
         const bestItem = new Swiper('#best_item',{
             autoplay:{delay:200000},
             loop:true,
-            slidesPerView: 5.5,
-            spaceBetween:40,
+            slidesPerView: 4,
+            spaceBetween:20,
             scrollbar:{
                 el:'#best_item .swiper-scrollbar',
             },
-            centeredSlides:true,
-        })
+            breakpoints: {
+                // 화면 너비가 1024px 이상(데스크탑)이 되면 아래 설정으로 덮어씌웁니다.
+                1400: { 
+                    slidesPerView: 5.5,  // 원래 원하시던 5.5개
+                    spaceBetween: 40,    // 원래 원하시던 40px
+                },}
+            })
+
         const menuBtn = document.getElementById('menu_btn');
         const subMenu = document.querySelector('.sub_menu');
 
