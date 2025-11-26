@@ -113,6 +113,14 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><a href="#"><img src="./images/Rectangle 4.png" alt=""></a></div>
                     <div class="swiper-slide"><a href="#"><img src="./images/main_bnr_2.png" alt=""></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper" id="main_bnr_m"><!-- 메인배너 스와이퍼 모바일 -->
+                <!--필수-->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide mobile_bnr"><a href="#"><img src="./images/mo.png" alt=""></a></div>
+                    <div class="swiper-slide mobile_bnr"><a href="#"><img src="./images/mo.png" alt=""></a></div>
                     <div class="swiper-slide mobile_bnr"><a href="#"><img src="./images/mo.png" alt=""></a></div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -649,6 +657,9 @@
             <div class="add_bnr">
                 <a href="#"><img src="./images/Frame 43.png" alt=""></a>
             </div>
+            <div class="add_bnr_m">
+                <a href="#"><img src="./images/bnr_m.png" alt=""></a>
+            </div>
             <div class="video_section">
                 <div class="video_item">
                     <iframe src="https://www.youtube.com/embed/I8OQreWKgIE"></iframe>
@@ -1023,11 +1034,38 @@
                 el:'#main_bnr .swiper-pagination',
             },
         })
+        const mainBnrM = new Swiper('#main_bnr_m',{
+            autoplay:{delay:200000},
+            loop:true,
+            pagination:{
+                el:'#main_bnr_m .swiper-pagination',
+            },
+        })
         const newItem = new Swiper('#new_item',{
             autoplay:{delay:200000},
             loop:true,
-            slidesPerView: 4,
-            spaceBetween:40,
+            slidesPerView: 3,
+            spaceBetween:20,
+            pagination:{
+                el:'#new_item .swiper-pagination',
+            },
+            breakpoints: {
+                // 화면 너비가 1024px 이상(데스크탑)이 되면 아래 설정으로 덮어씌웁니다.
+                1400: { 
+                    slidesPerView: 4,  // 원래 원하시던 5.5개
+                    spaceBetween: 40,    // 원래 원하시던 40px
+                },
+                793: { 
+                    slidesPerView: 4,  // 원래 원하시던 5.5개
+                    spaceBetween: 20,    // 원래 원하시던 40px
+                },
+            }
+        })
+        const newItemM = new Swiper('#new_item_m',{
+            autoplay:{delay:200000},
+            loop:true,
+            slidesPerView: 3,
+            spaceBetween:20,
             pagination:{
                 el:'#new_item .swiper-pagination',
             },
@@ -1035,7 +1073,7 @@
         const bestItem = new Swiper('#best_item',{
             autoplay:{delay:200000},
             loop:true,
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween:20,
             scrollbar:{
                 el:'#best_item .swiper-scrollbar',
@@ -1045,8 +1083,12 @@
                 1400: { 
                     slidesPerView: 5.5,  // 원래 원하시던 5.5개
                     spaceBetween: 40,    // 원래 원하시던 40px
-                },}
-            })
+                },
+                793: { 
+                    slidesPerView: 4,  // 원래 원하시던 5.5개
+                    spaceBetween: 20,    // 원래 원하시던 40px
+                },
+            }})
 
         const menuBtn = document.getElementById('menu_btn');
         const subMenu = document.querySelector('.sub_menu');

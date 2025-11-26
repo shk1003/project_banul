@@ -69,6 +69,7 @@ body {max-width: 1920px; margin:20px 0 ;}
 .sub_1 li:not(:first-child) a {font-size: 0.938rem; color: #6B6A6A; display: block; padding-bottom: 13px;}
 
 #main_bnr .swiper-pagination-bullet {background: #ED9671;}
+#main_bnr_m .swiper-pagination-bullet {background: #ED9671; width: 5px; height: 5px;}
 #new_item .swiper-pagination-bullet {background: #ED9671;}
 #best_item .swiper-scrollbar-horizontal {width: 790px; height: 3px; left: 50% ; transform: translateX(-50%);}
 
@@ -187,6 +188,8 @@ address {font-size: 0.813rem; color: #343434; line-height:180% ; padding-bottom:
     height: auto; 
     width: 100%; 
 }
+#main_bnr_m {display: none;}
+.add_bnr_m {display: none;}
 /* 반응형 */
 @media screen and (max-width:1400px){
     .notice {display: none;}
@@ -211,7 +214,12 @@ address {font-size: 0.813rem; color: #343434; line-height:180% ; padding-bottom:
     .footer_txt .f_bg {padding: 40px 42px;}
     .f_txt ul > li {stroke-width: 0.813rem;}
     .customer_review {width: 1340px;}
-    
+    /* 화면줄이면 썸넬 줄어듬 */
+    main .new #new_item  {width: 100%;}
+    #new_item .new_product img {width: 100%; height: auto;}
+    main .best #best_item  {width: 100%;}
+    #best_item .new_product img {width: 100%; height: auto;}
+    #best_item {margin: 0 15px;}
 }
 
 @media screen and (max-width: 793px){
@@ -225,4 +233,30 @@ address {font-size: 0.813rem; color: #343434; line-height:180% ; padding-bottom:
     #menu_btn img {width:15px ;}
     #main_bnr .swiper-slide img {width: 100%;}
     .main_header {padding: 0 10px;}
+    #main_bnr {display: none;}
+    #main_bnr_m {display: block;}
+    .new > h1 {font-size: 1.125rem; padding-bottom: 0;}
+    .new > p {font-size: 0.625rem;}
+    .new > p::after {width: 120px;}
+
+    .item_text .item_name {font-size: 0.563rem; padding:10px 0 7px ;}
+    .item_text .price {font-size: 0.563rem; padding-bottom: 7px;}
+    .item_text .level .level_txt {font-size: 0.5rem;}
+    .item_text .level svg {width: 5px; height: 5px;}
+    .item_text .review {font-size: 0.5rem;}
+    .item_text .level {gap: 2px;}
+    main .new #new_item  {width: 100%;}
+    #new_item .new_product img {width: 100%; height: auto;}
+    #new_item .swiper-pagination-bullet {width: 5px; height: 5px;}
+    .best > h1 {font-size: 1.125rem; padding-bottom: 0;}
+    .best > p {font-size: 0.625rem;}
+    .best > p::after {width: 130px;}
+    
+    #best_item {margin: 0 15px;}
+    main .best #best_item {width: 100%;}
+    #best_item .new_product .thumbnail img {width: 100%; height: auto;}
+    .best .best_tab .tab {width:135px ; height: 20px; font-size: 0.563rem;}
+    .best .best_tab {padding: 26px 0 12px;}
+    .add_bnr {display: none;}
+    .add_bnr_m {display: block; padding: 45px 0 79px; text-align: center;}
 }
