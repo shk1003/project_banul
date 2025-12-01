@@ -125,8 +125,8 @@ body {max-width: 1920px; margin:20px 0 ;}
 .video_section .video_item .text .heart_txt {color: #343434; font-size: 2.5rem; font-weight: 700; padding: 12px 0 45px ;}
 .video_section .video_item .text .heart_txt2 {color: #6B6A6A; font-weight: 500; line-height: 180%;}
 
-.customer_review {border-bottom: 1px solid #D9D9D9; width: 1440px; text-align: center; margin: 0 auto;}
-.customer_review .review_txt {display: flex; flex-flow: row nowrap; justify-content: space-between; width: 1360px; margin: 0 auto; padding-bottom: 20px;}
+.customer_review {border-bottom: 1px solid #D9D9D9;  text-align: center; margin: 0 auto;}
+.customer_review .review_txt {display: flex; flex-flow: row nowrap; justify-content: space-between; width:1360px ; margin: 0 auto; padding-bottom: 20px;}
 .customer_review .more {display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;}
 .customer_review h2 {font-size: 2rem; font-weight: 600; text-align: center; color: #343434; padding: 122px 0 16px;}
 .customer_review > p {font-size: 0.875rem; text-align: center; color: #6B6A6A; padding-bottom: 30px;}
@@ -190,6 +190,7 @@ address {font-size: 0.813rem; color: #343434; line-height:180% ; padding-bottom:
 }
 #main_bnr_m {display: none;}
 .add_bnr_m {display: none;}
+.review_item .star_view svg {width: 15px; height: 15px;}
 /* 반응형 */
 @media screen and (max-width:1400px){
     .notice {display: none;}
@@ -208,18 +209,21 @@ address {font-size: 0.813rem; color: #343434; line-height:180% ; padding-bottom:
     #best_item .swiper-slide img {width: 320px; height: 362px;}
     .add_bnr img {padding:0 40px ;}
     .heart_txt {font-size:1.875rem !important;}
-    .review_item .thumbnail_small img {width: 250px;}
     .review_item { width: 1340px;}
     .footer_notice {margin: 0 35px;}
     .footer_txt .f_bg {padding: 40px 42px;}
     .f_txt ul > li {stroke-width: 0.813rem;}
-    .customer_review {width: 1340px;}
     /* 화면줄이면 썸넬 줄어듬 */
     main .new #new_item  {width: 100%;}
     #new_item .new_product img {width: 100%; height: auto;}
     main .best #best_item  {width: 100%;}
     #best_item .new_product img {width: 100%; height: auto;}
     #best_item {margin: 0 15px;}
+    .customer_review .review_txt {padding: 0 70px 20px; width:auto; }
+    .review_item  {margin: 0 30px;}
+    /* .review_item .thumbnail_small {width: 250px;} */
+    .review_item .thumbnail_small img {width: 100%; height: auto; padding-right:15px ;}
+    .review_item {width: auto;}
 }
 
 @media screen and (max-width: 793px){
@@ -264,8 +268,24 @@ address {font-size: 0.813rem; color: #343434; line-height:180% ; padding-bottom:
 
     .video_section .video_item:nth-child(2) {display: none;}
     .video_section {width: 100%; height:390px ; background-color: #F6F4F4;}
-    .video_section .video_item .text .heart_txt {font-size: 1.75rem !important; padding: 9px 0 30px; text-align: center;}
+    .video_section .video_item .text .heart_txt {font-size: 1.75rem !important; padding: 9px 0 15px; text-align: center;}
     .video_section .video_item .text .heart_txt2 {font-size: 0.688rem ; text-align: center;}
     .video_section .video_item .text .video_txt {font-size: 0.625rem; text-align: center;}
     .video_section .video_item:first-child {padding: 23px 0 35px;}
+    .item4 {display: none;}
+    .item5 {display: none;}
+    .item9 {display: none;}
+    .item10 {display: none;}
+    .customer_review h2 {font-size: 1.125rem;}
+    .customer_review p {font-size: 0.625rem;}
+    .customer_review .review_txt {padding: 10px 15px;}
+    .review_item {margin: 0 15px;}
+    .review_txt .asterion .review_text {font-size: 0.625rem;}
+    .customer_review .asterion .star {padding: 0 12px;}
+    .review_txt .more .more_small {font-size: 0.563rem;}
+    .review_item .txt .title_view {font-size:0.563rem !important; padding: 7px 0 !important;}
+    .review_item .txt .view_txt {font-size:0.5rem !important; padding-bottom: 7px !important;}
+    .review_item .txt .year {font-size: 0.5rem;}
+    .review_item .txt .person {font-size: 0.5rem;}
+    .review_item .star_view svg {width: 10px; height: 10px;}
 }
