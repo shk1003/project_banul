@@ -224,6 +224,7 @@ address {font-size: 0.813rem; color: #343434; line-height:180% ; padding-bottom:
     /* .review_item .thumbnail_small {width: 250px;} */
     .review_item .thumbnail_small img {width: 100%; height: auto; padding-right:15px ;}
     .review_item {width: auto;}
+    .footer_txt {width: 1400px;}
 }
 
 @media screen and (max-width: 793px){
@@ -288,4 +289,8 @@ address {font-size: 0.813rem; color: #343434; line-height:180% ; padding-bottom:
     .review_item .txt .year {font-size: 0.5rem;}
     .review_item .txt .person {font-size: 0.5rem;}
     .review_item .star_view svg {width: 10px; height: 10px;}
+
+    .review_item .thumbnail_small img {padding-right: 0;}
+    .review_item .item2 , .item7 {margin: 0 15px;}
+    .footer_txt {width: 790px;}
 }
