@@ -1,12 +1,11 @@
 #wrap {
     width: 100%;
-    /* min-width: 1800px; */
     margin: 0 auto
 }
 main .new #new_item {
     width: 1440px; margin: 0 auto; padding: 50px 20px; }
 
-body {max-width: 1920px; margin:20px 0 ;}
+body {max-width: 1920px; margin:20px 0 0;}
 .top_menu {padding-bottom: 30px;}
 
 .main_header {display: flex; flex-flow: row nowrap; justify-content: space-between; padding: 0 240px;}
@@ -32,14 +31,14 @@ body {max-width: 1920px; margin:20px 0 ;}
 {content: ''; display: inline-block; width: 1px ; height: 10px ; background-color: #dddddd; 
     top: 50%; transform: translateX(19px);
 }
-#gnb ul li:first-child a { /* 메뉴왼쪽 여백제거 */
+#gnb ul li:first-child a {
     padding-left: 0; 
 }
-#gnb ul li:last-child a::after { /* 마지막 메뉴 막대기 제거 */
+#gnb ul li:last-child a::after {
     display: none;
 }
 
-#gnb ul li:not(:first-child) a:hover { /* 헤더 메뉴에 마우스 올렸을 때 글자색 */
+#gnb ul li:not(:first-child) a:hover { /* 헤더에 마우스 올렸을 때 글자색 */
     font-weight: 500;
     color: #ED9671 !important; 
 }
@@ -65,7 +64,6 @@ body {max-width: 1920px; margin:20px 0 ;}
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
 .sub_1 li:first-child {color: #343434; font-weight: 500; padding-bottom: 23px;}
-/* .sub_1 li:nth-child(n+2) {font-size: 0.938rem; color: #6B6A6A; padding-bottom: 13px;} */
 .sub_1 li:not(:first-child) a {font-size: 0.938rem; color: #6B6A6A; display: block; padding-bottom: 13px;}
 
 #main_bnr .swiper-pagination-bullet {background: #ED9671;}
@@ -74,7 +72,7 @@ body {max-width: 1920px; margin:20px 0 ;}
 #best_item .swiper-scrollbar-horizontal {width: 790px; height: 3px; left: 50% ; transform: translateX(-50%);}
 
 
-.swiper-pagination-bullet-active {background: #ED9671;} /* 확인-------------- */
+.swiper-pagination-bullet-active {background: #ED9671;}
 
 .item_text .item_name {font-size: 0.938rem; padding-top: 15px; padding-bottom: 12px;}
 .item_text .price {font-size: 0.938rem; font-weight: 700 ; padding-bottom: 12px;}
@@ -111,7 +109,6 @@ body {max-width: 1920px; margin:20px 0 ;}
 }
 
 
-
 .new_product {display: block;}
 
 .add_bnr a {display: block; text-align: center; margin: 120px 0;}
@@ -145,8 +142,8 @@ body {max-width: 1920px; margin:20px 0 ;}
 
 footer {margin-top: 90px;}
 footer .best_notice {font-size: 0.813rem; padding-left: 105px ;}
-.footer_notice {margin: 0 240px; display: flex; justify-content: space-between;}
-.notice_content {display: flex; flex-flow: row nowrap; justify-content: center; align-items: center; padding-bottom: 23px;}
+.footer_notice {margin: 0 240px; display: flex; justify-content: space-between; align-items: center; padding-bottom: 23px;}
+.notice_content {display: flex; flex-flow: row nowrap; justify-content: center; align-items: center; /* padding-bottom: 23px; */}
 .notice_content h1 {padding-right: 20px; font-size:1.375rem ; font-weight: 500;}
 .notice_content a {padding: 0 10px;}
 .footer_year {display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;}
@@ -226,7 +223,6 @@ address {font-size: 0.813rem; color: #343434; line-height:180% ; padding-bottom:
     #best_item {margin: 0 15px;}
     .customer_review .review_txt {padding: 0 70px 20px; width:auto; }
     .review_item  {margin: 0 30px;}
-    /* .review_item .thumbnail_small {width: 250px;} */
     .review_item .thumbnail_small img {width: 100%; height: auto; padding-right:15px ;}
     .review_item {width: auto;}
     .footer_txt {width: 1400px;}
